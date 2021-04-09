@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pay</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <!-- bootstrapcdn -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=New+Tegomin&family=Nunito:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- bootstrap js scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+  </head>
+  <body>
+    <!-- <div class="container-fluid"> -->
+      <nav class="navbar navbar-expand-lg fixed-top ">
+        <a class="navbar-brand" href="#"
+          >
+          <img src='../images/google-panda-circular-symbol.png' width="55rem">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">☰</span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#top" class="nav-link"> Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#displayactivites" class="nav-link">
+                About Me<i class="fas  fa-paw"></i
+              ></a>
+            </li>
+            <li class="nav-item"><a href="#founders" class="nav-link">About us</a></li>
+            <li class="nav-item">
+              <a href="#footer" class="nav-link"
+                >Contact us <i class="far fa-address-book"></i></i></a>
+            </li>
+          </ul>
+      </div>
+      </nav>
+
+      <section id="title" class="row ">
+        <div class="col-sm-6 items-container">
+          <div class="details ">
+            <h2>Save Us</h2>
+            <h3>We are disappearing...</h3>
+          </div>
+          <form>
+           <div class="form-group">
+    <label for="donationamount">Enter Amount: </label>
+    <input type="text" class="form-control" id="donationamount" aria-describedby="Help" placeholder="INR">
+   
+  </div>
+          </form>
+          <button type="button" class="btn btn-dark btn-lg" onclick="processPayment()">
+    Donate <i class="fas fa-donate"></i>
+
+</button>
+        </div>
+        <div class="col-sm-6 items-container">
+          <img class='img-fluid'
+            src="https://media.giphy.com/media/Q7A8xgdxK7MpBUHufz/giphy.gif"
+          />
+        </div>
+      </section>
+
+
+       <section id="founders">
+        <h2>What do we do?</h2>
+       <div class="row ">
+          <div class="cards col-md-3 p-md-4">
+              <i class="fas fa-5x fa-tree"></i>
+              <h3 class='p-3'>HABITAT PROTECTION</h3>
+             <p> Donec tempor nunc sed varius vulputate. Phasellus pellentesque a ante in malesuada. Ut efficitur vulputate elit, iaculis mattis lorem. Ut porttitor malesuada felis, sed dignissim velit rhoncus vitae. Integer ullamcorper accumsan efficitur.</p> 
+          </div>
+          <div class="cards col-md-3 p-md-4" >
+              <i class="fas fa-5x fa-seedling"></i>
+              <h3 class='p-3'>FOOD</h3>
+
+             <p> Donec tempor nunc sed varius vulputate. Phasellus pellentesque a ante in malesuada. Ut efficitur vulputate elit, iaculis mattis lorem. Ut porttitor malesuada felis, sed dignissim velit rhoncus vitae. Integer ullamcorper accumsan efficitur.</p> 
+          </div>
+          <div class="cards col-md-3 p-md-4">
+              <i class="fas fa-5x fa-baby-carriage"></i>
+              <h3 class='p-3'>REPRODUCTION </h3>
+
+             <p> Donec tempor nunc sed varius vulputate. Phasellus pellentesque a ante in malesuada. Ut efficitur vulputate elit, iaculis mattis lorem. Ut porttitor malesuada felis, sed dignissim velit rhoncus vitae. Integer ullamcorper accumsan efficitur.</p> 
+          </div>
+          </div>
+      </section> 
+
+
+
+      <section id="displayactivites">
+        <h2>About me <i class="fas  fa-paw"></i
+              ></h2>
+        <div class="content-aboutme">
+          <p>
+      Native to the mountain forests of southwest China, the giant panda is one
+      of the most beloved animals in the world. Bamboo makes
+      up nearly the entire diet of the panda. Due to the low nutritional value
+      of bamboo, pandas need to eat 10-20 kg (20-40 lb.) a day. Occasionally
+      pandas will eat other available food, including small rodents, eggs, fish
+      and other flora. Bamboo provides a good amount of water, but pandas need
+      to supplement this with fresh water daily.
+    
+      With only around 2060 pandas living in the wild, the giant panda is
+      considered vulnerable of extinction by the IUCN Red List. Due to the fact
+      that pandas reproduce so infrequently, it is very difficult for their
+      population to recover from such a low point. One the main reasons that
+      panda populations have declined is habitat destruction. As the human
+      population in China continues to grow, pandas’ habitat gets taken over by
+      development, pushing them into smaller and less livable areas. Habitat
+      destruction also leads to food shortages. Pandas feed on several varieties
+      of bamboo that bloom at different times of the year. If one type of bamboo
+      is destroyed by development, it can leave the pandas with nothing to eat
+      during the time it normally blooms, increasing the risk of starvation.
+
+      To combat this issue, the Chinese government has actively worked to
+      restore and protect bamboo habitat, and these measures have shown positive
+      results. State Forestry Administration surveys have concluded that the
+      panda population has increased since the Chinese government’s actions, and
+      in 2016, the IUCN upgraded the giant panda’s status from Endangered to
+      Vulnerable. While an increasing panda population is good news for now, it
+      is predicted that climate change will eliminate over 35% of the panda’s
+      bamboo habitat in the next 80 years.</p>
+    
+      </div>
+          <h2>Our Gallery</h2>
+          <!-- <p>Stressed..Look at these cuties</p> -->
+          <div id="pandacarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#pandacarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#pandacarousel" data-slide-to="1"></li>
+    <li data-target="#pandacarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-inline-block w-50" src="https://images.unsplash.com/photo-1562683687-80cb85c493b4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzF8fHBhbmRhJTIwd2l0aCUyMGh1bWFuc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-inline-block w-50" src="https://images.unsplash.com/photo-1593526492327-b071f3d5333e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzN8fHBhbmRhJTIwd2l0aCUyMGh1bWFuc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-inline-block w-50" src="https://images.unsplash.com/photo-1599221355214-aebebbfbb3bb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFuZGElMjB2aXNpdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#pandacarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#pandacarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+ <div id="footer">
+   <i class="fas fa-envelope icon">
+   <a href="mailto:savepanda.org">Mail us</a>
+   </i>
+   <i class="fab fa-instagram icon">
+     <a href="https://www.instagram.com">Instagram</a>
+   </i>
+   <i class="fab fa-facebook-square icon">
+      <a href='https://www.facebook.com/'>Facebook</a>
+   </i>
+
+ </div>
+ 
+      </section>
+
+      
+    
+      
+     
+ 
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+ <script>
+    var firebaseConfig = {
+      // ...
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig)
+ </script>
+  
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <script src="payment.js"></script>
+  </body>
+</html>
